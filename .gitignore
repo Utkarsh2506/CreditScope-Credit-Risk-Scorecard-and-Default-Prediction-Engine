@@ -1,0 +1,56 @@
+# ============================================================
+# CreditScope .gitignore
+# ============================================================
+
+# --- Raw & processed data (too large / sensitive for Git) ---
+data/raw/*.csv
+data/raw/*.xls
+data/raw/*.xlsx
+data/processed/*.csv
+data/processed/*.xlsx
+
+# --- Saved model artifacts ---
+models/*.pkl
+models/*.joblib
+models/*.json
+models/*.xgb
+
+# --- Power BI files (binary, not diffable) ---
+dashboard/*.pbix
+dashboard/*.pbit
+
+# --- Python environments ---
+venv/
+.venv/
+env/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Jupyter notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE / editor files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Byte-compiled / optimised ---
+*.py[cod]
+*$py.class
+
+# --- Distribution / packaging ---
+dist/
+build/
+*.egg-info/
+
+# --- Misc ---
+*.log
+*.tmp
